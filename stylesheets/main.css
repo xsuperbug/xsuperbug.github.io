@@ -1,0 +1,251 @@
+/* Based off of style-sheet found @ http://n-o-d-e.net/ */
+    body {
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 0;
+        font-family: 'Share Tech Mono', Monospace, Courier;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255,255,255,0.9);
+        min-height: 100%;
+        background-image: url('../images/bg.png');
+        background-repeat: repeat;
+        background-color: rgba(0,0,0,0.95);
+        background-position: fixed;
+    }
+
+    html    {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+    pre     {padding: 0; margin: 0 0 50px 0;}
+    ul      {padding: 0;}
+    span    {padding: 0; margin: 0 10px 0 0;}
+    li      {margin: 0; padding: 0; list-style: none;}
+    a       {text-decoration: none; color: rgba(255,255,255,1); transition-duration: 0.2s; font-weight: 600}
+    a:hover {color: #fff;text-decoration:underline;}
+/*    p       {padding: 0; margin: 0;}*/
+    img     {max-width: 100%;}
+
+
+    
+   .banner h1 {
+	margin-top:0;
+	margin-bottom:0.3em;
+   }
+
+   .banner .banner-top {
+
+   }
+
+   .banner .banner-bottom {
+	margin-top: 0.3em;
+   }
+
+    #page {
+        max-width: 100%;
+        min-height: 100%;
+        margin: auto;
+        padding: 50px 60px;
+    }
+
+    #posts-list {
+	padding: 0;
+    }
+
+/*  #content{width: 100%;} */
+/*    #header, #footer {width: 100%; overflow: hidden; letter-spacing: 0px; color: #fff;}*/
+
+    /*.glow   {text-shadow: 0px 0px 10px rgba(255,255,255,0.3);}*/
+    .date   {color: rgba(255,255,255,0.75);}
+    .text   {line-height: 31px;}
+    .list   {margin-bottom: 50px; margin-top: -30px;}
+    .post   {max-width: 700px; margin-bottom: 20px; margin-top: -10px;}
+    .title  {display: inline-block; margin-bottom: 20px;}
+    .code   {max-width: 700px; width:100%; background: rgba(255,255,255,0.02); padding: 20px; margin:10px 0 10px 0; display:inline-block;}
+    .next   {margin:-50px 0 40px 0; display:inline-block;}
+    .filter {display:block; margin-bottom: 60px;}
+
+    .zero_margin {margin:0;}
+    
+    .simple li {list-style-type:square; margin-bottom:1.2em}
+
+ 	.paginator .active {
+		background-color: rgba(255,255,255,0.9);
+        	color: rgba(0,0,0,0.95);
+		padding: 0px 5px;
+	}
+
+ 	.mainmenubar .active {
+		background-color: rgba(255,255,255,0.9);
+        	color: rgba(0,0,0,0.95);
+		padding: 3px 8px;
+	}
+
+
+	.hentry {
+		padding-bottom: 0.3em;
+	}
+
+	.hentry_hr {
+		padding-bottom: 0.3em;
+	}
+	
+	.hentry header h1{
+		margin-bottom: 0.1em;
+	}	
+
+	.taglist {
+		margin: 0;
+	}
+
+
+
+/******************          Articles             *******************/
+/*    These are components that live in the main content area.      */	
+	
+	
+   	article {
+		word-wrap: break-word;
+	}
+
+	article header h1 {
+		font-size: 2em;
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+
+	.entry-content {
+		line-height: 1.3em;
+	}
+
+	.article {
+		border: 1px green solid;
+		padding: 20px 10px 5px;
+	}
+	
+	
+
+
+/*******************         Top-level Panes       ********************/
+	#pane-top {
+		display:inline-block;
+		width:100%;
+		text-align: left;
+	}
+	
+
+	#pane-bot {
+		text-align: center;
+		display:inline-block;
+		width:100%;
+		margin-top: 1.5em;
+	}
+
+
+	#pane-left {
+		float:left;
+		width:80%;
+	/*	background:#9c9;*/
+		min-width: 320px;
+	}
+
+
+	#pane-right {
+		float:right;
+		width:16%;
+		min-width: 10em;
+		/*background:#c9c;*/
+	}
+		
+	
+
+/*******************          MAIN MENU             ********************/
+
+	.mainmenubar {
+	
+	}
+	
+	
+/*******************          SIDEBOX             ********************/
+	
+
+	.sidebox h1 {
+		text-align: center;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.sidebox h2 {
+		color: red;
+		text-align: center;
+		font-size: 14px;
+		margin: 0;
+	}
+
+
+	.sidebox .sidebox_content {
+		overflow: hidden;
+		/*width: 80%;*/
+		display: inline-block;
+		float: none;
+		margin-top: 0;
+	}
+	
+	.sidebox_content ul {
+		margin: 0;
+	}
+	
+
+	.sidebox_content li {
+		margin: 0;
+	}
+
+	.sidebox_content li.lastitem {
+		text-align: center;
+		padding-top: 0.6em;
+	}
+	
+	.sidebox .border-top_bot {
+		display: inline-flex;
+		float: none;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+
+	.sidebox .border-top_bot .left_end {
+		/*background-color: yellow;*/
+		float: left;
+		width: 5%;
+		text-align: left;
+	}
+	
+	.sidebox .border-top_bot .right_end {
+		/*background-color: red;*/
+		float: right;
+		width: 5%;
+		text-align: right;
+	}
+	
+	.sidebox .border-top_bot .middle_end {
+		/*background-color: blue;*/
+		float: none;
+		max-height: 16px;
+		width: 90%; /* = 100 - .left_end - .right_end */
+	}
+	
+	.sidebox .border-left { 
+		float: left;
+/* Uncomment if sidebox is embedded in left-side of screen column */
+/*		margin-right: -1em;*/
+		width: 1em;
+		text-align: left; 
+	}
+	.sidebox .border-right { 
+		float: right;
+		margin-left: -1em; /* this is added because the sidebox will be on the right hand side of the view screen. If it was in a column on the lafthand side, then you would remove the margin-right and add margin-left=1em to .border-right */
+		width: 1em;
+		text-align: right; 
+	}
+	.sidebox .active-tag {
+		background-color: rgba(255, 255, 255, 0.9);
+		color: rgba(0, 0, 0, 0.95);
+	}
